@@ -162,6 +162,7 @@
 
 # Fingerprint sensor  device
 /dev/fingerprint         0664 system input
+/dev/esfp0               0664 system input
 
 # Framebuffer for Dynamic Resolution Switch
 /sys/devices/virtual/graphics/fb0 mode        0664 system graphics
