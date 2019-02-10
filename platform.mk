@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
 
 # QCOM Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl-qti
+    android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.bluetooth@1.0-service-qti
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
@@ -195,10 +196,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #WiFi MAC address path
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wifi.addr_path=/data/vendor/wifi/wlan_mac.bin
-
-# Force camera API
-PRODUCT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=2
 
 # setup dm-verity configs.
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
