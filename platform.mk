@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    sound_trigger.primary.sdm660 \
     audio.primary.sdm660
 
 # GFX
